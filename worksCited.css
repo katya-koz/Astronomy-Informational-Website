@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+  
+}
+
+body {
+  width:100%;
+  margin: 0px 0px 0px 0px;
+  overflow-x:hidden;
+  height:100%;
+  background-color: black !important;
+}
+
+.nav-bar{
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: black;
+  position:sticky;
+  top:0;
+  z-index:3;
+}
+.nav-option{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.nav-option:hover{
+  color:#ed5f0c;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  
+  background-color: #8f8f8f;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.active{
+  color: #8f8f8f;
+}
+
+.bibliography{
+  display:flex;
+  flex-direction:column;
+  font-family: 'Radio Canada', sans-serif;
+  color:white;
+  margin:auto;
+  width: 60%;
+}
+.single-bib{
+  text-indent: -20%;
+  
+  margin-left: 20%;
+}
+.single-bib p{
+  overflow-wrap:break-word;
+}
+.title{
+  margin:auto;
+}
